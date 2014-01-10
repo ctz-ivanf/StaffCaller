@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- VISTA CORRESPONDIENTE Al DETALLE DE MIEMBRO
+    - se muestran los detalles de un determinado miembro -->
+<html>
+<head>
+</head>
+
+	<body>
+    	<div id="memDetails" data-role="page">
+    		
+    		<!-- reservamos una cabecera para insertar desde el js la navbar comun -->
+    		<div data-role="header" data-position="fixed" data-id="nav"></div>
+    		
+			<div data-role="content">
+				<h3 id="dep_name" class="dep_name">Departamento: </h3>
+				<div class="ui-grid-a" id="custom-detail">
+					<div  class="ui-block-a" >
+						<img id="mem_photo" src="img/default_contact.png"/>
+					</div>
+					<div class="ui-block-b" >
+						<h3 id="mem_name"></h3>
+						<h4 id="mem_charge"></h4> 
+					</div> 
+				</div>
+				<div class="separator"></div>
+				<div class="ui-grid-a">
+					<div  class="ui-block-a" >
+						<h3>Marcar como favorito: </h3>
+						<h3>Teléfono: </h3>
+						<h3>Extensión: </h3>
+					</div>
+					<div class="ui-block-b" >
+						<a data-role="button" id="switchFav" class="switchFav nofav"></a>
+						<h3 id="mem_telephone"></h3>
+						<h3 id="mem_extension"></h3>
+					</div> 
+				</div>
+				<div class="separator"></div>
+				<div class="ui-grid-a">
+					<div  class="ui-block-a" >
+						<a id="callExt" class="callBtn" data-role="button" data-icon="grid">Llamar a extensión</a>
+					</div>
+					<div class="ui-block-b" >
+						<a id="callTel" class="callBtn" data-role="button" data-icon="phone">Llamar a teléfono</a>
+					</div> 
+				</div>
+	    	</div>
+    	</div>  
+    </body>
+</html>

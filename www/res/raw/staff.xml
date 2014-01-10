@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<staff company_name="ACME" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="staff.xsd">
+	
+	<department name="Dirección">
+		<charge name="Director General">
+			<member>
+				<name>Juanjo García de la Huerta y Tomás</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+		</charge>
+		<charge name="Adjunto Dirección">
+			<member>
+				<name>Ander López</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+		</charge>
+		<charge name="Director Desarrollo de Negocio">
+			<member>
+				<name>Pedro Argüelles</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+		</charge>
+		<charge name="Gestor de Cuentas">
+			<member>
+				<name>José Ardanza</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+			<member>
+				<name>Josefa Reina</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+			<member>
+				<name>Bráulio Herreras</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+		</charge>
+		<charge name="Director de RRHH">
+			<member>
+				<name>Iván Duró</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+		</charge>
+	</department>
+    
+	<department name="Administración">
+		<charge name="Responsable Administración">
+			<member>
+				<name>Juan José López</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+		</charge>
+		<charge name="Técnico Administración">
+			<member>
+				<name>Luján Luces</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+			<member>
+				<name>Francisco Méndez</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+		</charge>
+	</department>
+	
+	<department name="Sistemas">
+		<charge name="Director de Sistemas">
+			<member>
+				<name>José Bódalo</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+		</charge>
+		<charge name="Responsable Mantenimiento">
+			<member>
+				<name>Nancho Céspedes</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+		</charge>
+		<charge name="Ingeniero de Sistemas">
+			<member>
+				<name>Carla Felipe</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+			<member>
+				<name>Juana G. García</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+			<member>
+				<name>Laura Martos</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+			<member>
+				<name>Fran Ródenas</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+		</charge>
+	</department>
+	
+	<department name="Proyectos">
+		<charge name="Director de Proyectos">
+			<member>
+				<name>Lucho Pérez</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+		</charge>
+		<charge name="Ingeniero de Calidad">
+			<member>
+				<name>Natalia Fernández</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+			<member>
+				<name>Juanjo Fernández</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+		</charge>
+		<charge name="Ingeniero de Software">
+			<member>
+				<name>Maite Ruíz</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+			<member>
+				<name>Jaime Ruíz</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+			<member>
+				<name>Borja de la Huerta</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+			<member>
+				<name>Nante Campocaso</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+		</charge>
+	</department>
+	
+	<department name="Marketing">
+		<charge name="Director de Marketing">
+			<member>
+				<name>Jaime Pedreras Pérez</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+		</charge>
+		<charge name="Ingeniero de Producto">
+			<member>
+				<name>Dulce Méndez</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+			<member>
+				<name>Manti Santiago</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+			<member>
+				<name>Jose Javier Nero</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+		</charge>
+		<charge name="Director de Comunicación">
+			<member>
+				<name>Nicanor Gala</name>
+				<telephone>000000000</telephone>
+				<extension>0050</extension>
+				<image_url>img/default_contact.png</image_url>
+			</member>
+		</charge>
+	</department>
+</staff>

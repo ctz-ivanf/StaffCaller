@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+    Entrada a la app.
+    - por el momento simplemente redirige a la pestania "Departamentos"
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" /> <!-- para linkar automaticamente los numeros de telefono --> 
+        <meta name="viewport" content="width=device-width, user-scalable=no">	<!-- para ajustar la escala de la pagina a la anchura del dispositivo -->
+        
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/custom.css" />
+        <link rel="stylesheet" href="css/themes/custom-themes.css" />
+  		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+  		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css" />
+  		<!-- El css por defecto de jquery mobile se sustituye por el obtenido del theme roller -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+        
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+		
+		<script type="text/javascript" src="phonegap.js"></script> 
+		<script type="text/javascript" src="js/functions.js"></script>		<!-- funciones polivalentes -->   
+        <script type="text/javascript" src="js/index.js"></script>
+    	<script type="text/javascript" src="js/dep_details.js"></script>	<!-- logica de la pantalla con el listado de departamentos -->
+        <script type="text/javascript" src="js/mem_details.js"></script>	<!-- logica de la pantalla con el detalle de miembro -->
+        <script type="text/javascript" src="js/search_results.js"></script>	<!-- logica de la pantalla con el resultado de la busqueda -->   
+ 
+        <title>StaffCaller</title>
+        
+    </head>
+    <body>  
+    	<div id="splashPage" data-role="page"></div>
+    	
+    	<div id="depsTab" data-role="page">
+    		
+    		<!-- reservamos una cabecera para insertar desde el js la navbar comun -->
+    		<div data-role="header" data-position="fixed" data-id="nav"></div>
+			
+			<div data-role="content">
+	        	<ul id="depsList" data-role="listview" data-filter="false"></ul>
+	    	</div>   	
+    	</div>  
+    	
+    	<div id="favsTab" data-role="page">
+    		
+    		<!-- reservamos una cabecera para insertar desde el js la navbar comun -->
+    		<div data-role="header" data-position="fixed" data-id="nav"></div>
+			
+			<div data-role="content">
+	        	<ul id="favsList" data-role="listview" data-filter="false"></ul>
+	    	</div>
+    	</div>
+    	
+    	<div id="searchTab" data-role="page">
+    		
+    		<!-- reservamos una cabecera para insertar desde el js la navbar comun -->
+    		<div data-role="header" data-position="fixed" data-id="nav"></div>
+			
+			<div data-role="content">
+				<div class="ui-field-contain">
+				  <legend>Departamento:</legend>
+				  <select name="select-department" id="select-department" data-native-menu="false" onchange="updateCharge()">
+				  	<option value="Todos">Todos</option>
+				  </select>
+				</div>
+				<div class="ui-field-contain">
+				  <legend>Cargo:</legend>
+				  <select name="select-charge" id="select-charge" data-native-menu="false"></select>
+				</div>
+				<div class="separator"></div>
+				<a id="search" data-role="button" data-icon="search" class="ui-btn ui-icon-search ui-btn-icon-right">Buscar</a>
+	    	</div>	
+    	</div>   
+    </body>
+</html>

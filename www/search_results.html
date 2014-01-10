@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- VISTA CORRESPONDIENTE A LOS RESULTADOS DE LA BUSQUEDA
+    - se muestra el listado de cargos de un determinado departamento -->
+<html>
+<head>
+</head>
+	<body>
+    	<div id="searchResults" data-role="page">
+    		
+    		<!-- reservamos una cabecera para insertar desde el js la navbar comun -->
+    		<div data-role="header" data-position="fixed" data-id="nav"></div>
+			
+			<div data-role="content">
+				<h4 id="dep_name" class="shadowed">Departamento: </h4>
+				<h4 id="charge_name" class="shadowed">Cargo: </h4>
+				<br>
+				<ul id="resultsList" data-role="listview" data-filter="false"></ul>
+	    	</div>
+	    	
+    	</div> 
+    </body>
+</html>

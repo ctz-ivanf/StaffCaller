@@ -1,0 +1,127 @@
+/* 
+ * HOJA DE ESTILOS CUSTOMIZADOS 
+ */
+
+/* para aniadir un count bubble en las cabeceras de un acordeon */ 
+.ui-collapsible-heading .ui-btn-text{ display:block;}
+.ui-collapsible-heading .ui-li-count { position: absolute; font-size: 11px; font-weight: bold; padding: .2em .5em; top: 50%; margin-top: -.9em; right: 10px;  border-radius: 1em 1em 1em 1em; background: linear-gradient(#FFFFFF, #F1F1F1) repeat scroll 0 0 #EEEEEE;  border: 1px solid #CCCCCC; color: #222222;font-weight: bold;text-shadow: 0 1px 0 #FFFFFF; }
+
+/********************************
+ * Listados
+ */
+
+.ui-listview>li h4,
+.ui-listview>li p {
+	margin-left: -40px;
+}
+
+.ui-listview img.fav {
+	background: yellow;
+	width: 10%;
+	height: 100%;
+	max-height: none !important;
+	border: 0px;
+	outline: none;
+}
+
+.ui-listview img.nofav {
+	background: black;
+	width: 10%;
+	height: 100%;
+	max-height: none !important;
+	border: 0px;
+	outline: none;
+}
+
+/********************************
+ * Detalle de departamento
+ */
+
+#depDetails .shadowed {
+	background: #e5e5e5;
+	padding: 10px;
+}
+
+#depDetails .ui-li-count {
+	background: #ffffff;
+}
+
+/********************************
+ * Pantalla de busqueda
+ */
+
+#searchTab .separator {
+	background: #e5e5e5;
+	height: 4px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+/***********************************
+ * Detalle de resultados de busqueda
+ */
+
+#searchResults .shadowed {
+	background: #e5e5e5;
+	padding: 10px;
+}
+
+#searchResults .charge_name h4 {
+	font-style: normal;
+}
+
+/********************************
+ * Detalle de miembro
+ */
+
+#memDetails .separator {
+	background: #e5e5e5;
+	height: 4px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#memDetails .dep_name {
+	background: #e5e5e5;
+	padding: 10px;
+}
+
+#memDetails #custom-detail .ui-block-a {
+    width: 35%;
+}
+
+#memDetails #custom-detail .ui-block-b {
+    width: 65%;  
+}
+
+#memDetails #custom-detail .ui-block-b h3 {
+    line-height: 20px;  
+}
+
+#memDetails #custom-detail .ui-block-b h4 { 
+    margin-top: -14px;
+    line-height: 16px;
+}
+
+#memDetails #mem_photo {
+	width: 90%;
+}
+
+#memDetails .switchFav {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 20px;
+	width: 20px;
+}
+
+#memDetails .switchFav.fav {
+    background-image: url('../img/star_on.png');
+}
+
+#memDetails .switchFav.nofav {
+    background-image: url('../img/star_off.png');
+}
+
+#memDetails .ui-btn.callBtn {
+    white-space: normal; 
+}

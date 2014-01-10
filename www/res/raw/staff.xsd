@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="staff">
+	  <xs:complexType>
+	    <xs:sequence>
+	    
+	     <xs:element name="department" maxOccurs="unbounded">
+		  <xs:complexType>
+		    <xs:sequence>
+		      
+		      <xs:element name="charge" maxOccurs="unbounded">
+			   <xs:complexType>
+			    <xs:sequence>
+			      
+			      <xs:element name="member" maxOccurs="unbounded">
+				   <xs:complexType>
+				    <xs:sequence>
+				      <xs:element name="name" type="xs:string"/>
+				      <xs:element name="telephone" type="xs:integer"/>
+				      <xs:element name="extension" type="xs:integer"/>
+				      <xs:element name="image_url" type="xs:string"/>
+				    </xs:sequence>
+				  </xs:complexType>
+				 </xs:element>
+			      
+			    </xs:sequence>
+			    <xs:attribute name="name" type="xs:string" use="required"/>
+			  </xs:complexType>
+			 </xs:element>
+		      
+		    </xs:sequence>
+		    <xs:attribute name="name" type="xs:string" use="required"/>
+		  </xs:complexType>
+		 </xs:element>
+		 
+	    </xs:sequence>
+	    <xs:attribute name="company_name" type="xs:string" use="required"/>
+	  </xs:complexType>
+	</xs:element>
+</xs:schema>
