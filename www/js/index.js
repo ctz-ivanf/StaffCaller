@@ -27,7 +27,7 @@ $(document).on("pageinit","#splashPage",function()
 		$.mobile.changePage("#depsTab");
 	else
 		setTimeout(function () {
-	     	$.mobile.changePage("#uploadContentsDialog"); }, 300);
+	     	$.mobile.changePage("#uploadContentsDialog",{ 'role':'dialog'}); }, 100);
 });
 
 //gestion del boton menu del dispositivo
