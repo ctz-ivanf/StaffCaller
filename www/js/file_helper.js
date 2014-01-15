@@ -1,26 +1,25 @@
-
-$(document).on("pageinit","#splashPage",function()
-{
-	var local_file = document.getElementById('local_file');
-    local_file.addEventListener('change', function(){handleFileSelect("xml");}, false);
-    local_file.click();
-});
-
 function handleFileSelect(type) {
     //var file = this.files[0]; // FileList object
     var file = $("#selLocalFile input:first").val();
-    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fs) {
-        gotFS(fs,file,type);
-    }, fail);
+    
+    window.webkitRequestFileSystem (LocalFileSystem.PERSISTENT, 
+    								0, 
+    								function(fs) { gotFS(fs,file,type);},
+    								fail);  
 }
 
-function gotFS(fileSystem, file, type) {
-    var flags = {create: true, exclusive: false};
-    fileSystem.root.getFile(file.name, flags, function(fe) {gotFileEntry(fe, file, type);}, fail);
+function gotFS(fileSystem, file, type) 
+{
+	console.log(fileSystem.name);
+	console.log(fileSystem.root.name);
+	
+   // var flags = {create: true};
+    //fileSystem.root.getFile("sample.xml", flags, function(fe) {gotFileEntry(fe, file, type);}, fail);
 }
 
 function gotFileEntry(fileEntry, file, type) {
-    fileEntry.createWriter(function(w){gotFileWriter(w, file, type);}, fail);
+	console.log("EN FILE ENTRY");
+    //fileEntry.createWriter(function(w){gotFileWriter(w, file, type);}, fail);
 }
 
 function gotFileWriter(fileWriter, file, type) {

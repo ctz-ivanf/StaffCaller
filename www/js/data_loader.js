@@ -23,11 +23,29 @@ function getRemoteData()
 
 function readLocalFile()
 {
+	/*
 	console.log($("#selLocalFile input:first").val());
 	data_url = $("#selLocalFile input:first").val();
    
    	db = openDb();
 	db.transaction(createDb, dbTxError);
+	*/
+	
+	//request the persistent file system
+    
+    handleFileSelect("xml");
+}
+
+function onFSSuccess(fs) 
+{
+    //fileSystem = fs;
+    console.log("creado");
+}
+
+function onError(fs) 
+{
+    //fileSystem = fs;
+    console.log("error");
 }
 
 function loadDefaultData()
