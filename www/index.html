@@ -21,6 +21,7 @@
 		<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
 		
 		<script type="text/javascript" src="phonegap.js"></script> 
+		<script type="text/javascript" src="js/storage/jquery.storageapi.js"></script>		<!-- plugin para manejo del storage --> 
 		<script type="text/javascript" src="js/functions.js"></script>		<!-- funciones polivalentes -->   
         <script type="text/javascript" src="js/index.js"></script>
     	<script type="text/javascript" src="js/dep_details.js"></script>	<!-- logica de la pantalla con el listado de departamentos -->
@@ -32,6 +33,33 @@
     </head>
     <body>  
     	<div id="splashPage" data-role="page"></div>
+    	
+    	 <div id="uploadContentsDialog" data-role="dialog">
+        	<div data-role="content">
+        		<div data-role="collapsible-set" data-theme="a" data-content-theme="a">
+	        		<div data-role="collapsible">
+					    <h4>URL</h4>
+					    <form onsubmit="getRemoteData()">
+					    	<label for="remote_url">Datos en URL remota</label>
+					     	<input type="text" data-clear-btn="true" name="remote_url" id="remote_url" value="">
+					     	<input type="submit" value="Cargar datos">
+						</form>
+					</div>
+					<div data-role="collapsible">
+					    <h4>FILE</h4>
+					    <form onsubmit="readLocalFile()">
+					    	<label for="local_file">Datos en fichero local</label>
+					    	<input type="file" data-clear-btn="true" name="local_file" id="local_file" value="">
+					    	<input type="submit" value="Cargar datos">
+					    </form>
+					</div>
+					<div data-role="collapsible">
+					    <h4>DEMO</h4>
+					    <button onclick="loadDefaultData()">Cargar datos de demo</button>
+					</div>
+        		</div>
+        	</div>
+        </div>
     	
     	<div id="depsTab" data-role="page">
     		

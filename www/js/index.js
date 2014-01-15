@@ -17,21 +17,27 @@ $(document).on("pagecreate","#splashPage",function()
 {	
 	//inicializacion de la BD
 	db = openDb();
-	db.transaction(createDb, dbTxError);
+	
+	//inicializacion del almacenaje local
+	storage=$.localStorage;
 });
 
 $(document).on("pageinit","#splashPage",function()
 {	
-	//redirigimos a la pagina principal de la app
-    $.mobile.changePage("#depsTab");
+	//comprobacion de la existencia de datos
+	//para redirigir  a donde corresponda
+	if(storage.get("data_src"))
+		$.mobile.changePage("#depsTab");
+	else
+		setTimeout(function () {
+	     	$.mobile.changePage("#uploadContentsDialog"); }, 100);
 });
 
+//gestion del boton menu del dispositivo
 $(document).on("menubutton",function()
 {	
     if (navigator.notification)
-    	//navigator.notification.confirm("¿Salir de la aplicación?", closeApp); 
 		navigator.notification.confirm("¿Salir de la aplicación?", closeApp,"StaffCaller",["Si","No"]); 
-		//navigator.notification.alert("¿Salir de la aplicación?", closeApp); 
 });
 
 //creacion de la base de datos
@@ -87,6 +93,8 @@ function loadDb(tx)
     		});
     	});
     });
+    
+    storage.set("data_src","demo");
 }
 
 
