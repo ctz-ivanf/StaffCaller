@@ -15,9 +15,6 @@ var sql;	//para almacenar las sentencias a ejecutar sobre la BD
 
 $(document).on("pagecreate","#splashPage",function()
 {	
-	//inicializacion de la BD
-	db = openDb();
-	
 	//inicializacion del almacenaje local
 	storage=$.localStorage;
 });
@@ -39,64 +36,6 @@ $(document).on("menubutton",function()
     if (navigator.notification)
 		navigator.notification.confirm("¿Salir de la aplicación?", closeApp,"StaffCaller",["Si","No"]); 
 });
-
-//creacion de la base de datos
-function createDb(tx)
-{	
-	console.log("Creando base de datos...");
-	
-	tx.executeSql("DROP TABLE IF EXISTS members");
-	
-	sql = "CREATE TABLE members " 
-				+ "(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, " 
-				+ "name VARCHAR(100) NOT NULL, " 
-				+ "company VARCHAR(100) NOT NULL, " 
-				+ "department VARCHAR(100) NOT NULL, " 
-				+ "charge VARCHAR(100) NOT NULL, " 
-				+ "telephone VARCHAR(20) NOT NULL, "
-				+ "extension VARCHAR(20) NOT NULL, "
-				+ "image_url VARCHAR(100) NOT NULL, "
-				+ "fav TINYINT unsigned NOT NULL DEFAULT '0')"; 
-	
-	//la sentencia solo tendra exito si la tabla no existia previamente,
-	//por lo tanto habra que cargarla			
-	tx.executeSql (sql, undefined, loadDb, dbTxError);
-}
-
-//carga de los datos de xml en la tabla
-function loadDb(tx)
-{
-	console.log("Cargando base de datos...");
-	
-	$.ajax({url: "res/raw/staff.xml", async: false}).done(function(data) 
-	{
-		var company_name = $(data).find("staff").attr("company_name");
-    	$(data).find("department").each(function()
-    	{	
-    		var department_name = $(this).attr("name");
-    		$(this).find("charge").each(function()
-    		{		
-    			var charge_name = $(this).attr("name");
-    			$(this).find("member").each(function()
-    			{
-    				sql = "INSERT INTO members (name,company,department,charge,telephone,extension,image_url) "
-    						+ "VALUES ('"+ $(this).find("name").text() + "','" 
-    									+ company_name + "','" 
-    									+ department_name + "','" 
-    									+ charge_name + "','" 
-    									+ $(this).find("telephone").text() + "','" 
-    									+ $(this).find("extension").text() + "','" 
-    									+ $(this).find("image_url").text() + "')";
-    									
-    				tx.executeSql (sql, undefined, undefined, dbTxError);   		
-    			});
-    		});
-    	});
-    });
-    
-    storage.set("data_src","demo");
-}
-
 
 /***************************
  *  JS comun a las pestanias
@@ -182,8 +121,7 @@ function loadFavsList(tx)
 				$("#favsList").listview().listview("refresh");
 			}
 			else {
-		   		if (navigator.notification)
-		            navigator.notification.alert("Aún no has marcado ningún favorito", alertDismissed);
+		   		showAlert("Aún no has marcado ningún favorito", alertDismissed);
 			}      
 	    }, 
 	    dbTxError);

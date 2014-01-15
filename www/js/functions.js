@@ -82,7 +82,14 @@ function sleep(milliSeconds)
     while (new Date().getTime() < startTime + milliSeconds);
 }
 
-
+//alertas genericas
+function showAlert(message,callback)
+{
+	if (navigator.notification)
+		navigator.notification.alert(message, callback);
+	else
+		alert(message);
+} 
 
 
 	
