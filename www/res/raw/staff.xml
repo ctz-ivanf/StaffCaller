@@ -5,15 +5,15 @@
 		<charge name="Director General">
 			<member>
 				<name>Juanjo García de la Huerta y Tomás</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-783</telephone>
 				<extension>0050</extension>
-				<image_url>img/default_contact.png</image_url>
+				<image_url>img/staff/juanjo.jpg</image_url>
 			</member>
 		</charge>
 		<charge name="Adjunto Dirección">
 			<member>
 				<name>Ander López</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-745</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
@@ -21,7 +21,7 @@
 		<charge name="Director Desarrollo de Negocio">
 			<member>
 				<name>Pedro Argüelles</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-733</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
@@ -29,19 +29,19 @@
 		<charge name="Gestor de Cuentas">
 			<member>
 				<name>José Ardanza</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-721</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
 			<member>
 				<name>Josefa Reina</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-711</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
 			<member>
 				<name>Bráulio Herreras</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-734</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
@@ -49,7 +49,7 @@
 		<charge name="Director de RRHH">
 			<member>
 				<name>Iván Duró</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-789</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
@@ -60,7 +60,7 @@
 		<charge name="Responsable Administración">
 			<member>
 				<name>Juan José López</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-724</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
@@ -68,13 +68,13 @@
 		<charge name="Técnico Administración">
 			<member>
 				<name>Luján Luces</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-766</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
 			<member>
 				<name>Francisco Méndez</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-777</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
@@ -85,7 +85,7 @@
 		<charge name="Director de Sistemas">
 			<member>
 				<name>José Bódalo</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-709</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
@@ -93,7 +93,7 @@
 		<charge name="Responsable Mantenimiento">
 			<member>
 				<name>Nancho Céspedes</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-781</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
@@ -101,25 +101,25 @@
 		<charge name="Ingeniero de Sistemas">
 			<member>
 				<name>Carla Felipe</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-785</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
 			<member>
 				<name>Juana G. García</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-780</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
 			<member>
 				<name>Laura Martos</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-783</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
 			<member>
 				<name>Fran Ródenas</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-221</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
@@ -130,47 +130,47 @@
 		<charge name="Director de Proyectos">
 			<member>
 				<name>Lucho Pérez</name>
-				<telephone>000000000</telephone>
+				<telephone>555-453-783</telephone>
 				<extension>0050</extension>
-				<image_url>img/default_contact.png</image_url>
+				<image_url>img/staff/lucho.png</image_url>
 			</member>
 		</charge>
 		<charge name="Ingeniero de Calidad">
 			<member>
 				<name>Natalia Fernández</name>
-				<telephone>000000000</telephone>
+				<telephone>555-435-783</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
 			<member>
 				<name>Juanjo Fernández</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-700</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
 		</charge>
 		<charge name="Ingeniero de Software">
 			<member>
-				<name>Maite Ruíz</name>
-				<telephone>000000000</telephone>
+				<name>Iván Fernández González</name>
+				<telephone>555-455-200</telephone>
 				<extension>0050</extension>
-				<image_url>img/default_contact.png</image_url>
+				<image_url>img/staff/ivan.jpg</image_url>
 			</member>
 			<member>
 				<name>Jaime Ruíz</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-000</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
 			<member>
 				<name>Borja de la Huerta</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-442</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
 			<member>
 				<name>Nante Campocaso</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-995</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
@@ -181,7 +181,7 @@
 		<charge name="Director de Marketing">
 			<member>
 				<name>Jaime Pedreras Pérez</name>
-				<telephone>000000000</telephone>
+				<telephone>555-450-783</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
@@ -189,19 +189,19 @@
 		<charge name="Ingeniero de Producto">
 			<member>
 				<name>Dulce Méndez</name>
-				<telephone>000000000</telephone>
+				<telephone>555-005-783</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
 			<member>
 				<name>Manti Santiago</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-765</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
 			<member>
 				<name>Jose Javier Nero</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-232</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
@@ -209,7 +209,7 @@
 		<charge name="Director de Comunicación">
 			<member>
 				<name>Nicanor Gala</name>
-				<telephone>000000000</telephone>
+				<telephone>555-455-787</telephone>
 				<extension>0050</extension>
 				<image_url>img/default_contact.png</image_url>
 			</member>
